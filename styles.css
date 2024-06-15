@@ -1,0 +1,136 @@
+:root {
+    --gris: #97908a;
+    --blanco: #fff;
+    --ancho: 940px;
+    --oliva: #7eba25;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--blanco);
+    padding: 0 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+}
+
+header {
+    background-color: var(--gris);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    #menu,
+    h1 {
+        width: var(--ancho);
+        margin: 0 auto;
+    }
+}
+
+#menu {
+    background-color: #4c4d4a;
+    height: 3em;
+    padding-left: 1em;
+    display: flex;
+
+    .active a {
+        background-color: #000;
+        color: var(--blanco);
+        padding: 1em;
+    }
+}
+
+li {
+    display: inline;
+    padding: 1em;
+    a {
+        text-decoration: none;
+        color: var(--oliva);
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+#menu li a:hover {
+    background-color: #000;
+    color: var(--blanco);
+    padding: 1em;
+}
+.entrada{
+    background-color: #7a756f;
+    height: 400px;
+    .banner {
+        background-image: url(./img/peces.jpg);
+        background-repeat: no-repeat;
+        height: inherit;
+        background-size: 940px;
+        background-position: 50%;
+    }
+}
+.contenido{
+    width: var(--ancho);
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caja-iz {
+    width: 240px;
+    float: left;
+    margin: 0px;
+    padding: 0px 30px 30px 0px;
+    h2{
+        color: var(--oliva);
+        margin: 2em 0;
+    }
+    .list li{
+        border-bottom: 1px solid #ccc;
+        line-height: 2em;
+        padding: 0;
+    }
+}
+
+.caja-de {
+    width: 640px;
+    float: right;
+
+    .post {
+        margin: 0px 0px 30px 0px;
+        border-bottom: 1px solid #CCCCCC;
+
+        h3 {
+            padding: 4px 35px 4px 15px;
+            background: #000000;
+            font-weight: normal;
+            color: var(--blanco);
+            width: max-content;
+            margin: 2em 0;
+        }
+
+        p {
+            padding: 20px 0px;
+        }
+
+        a {
+            color: #7eba25;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+footer {
+    margin: 0 auto;
+    padding: 20px 0px;
+    background: #000000;
+    color: #686767;
+    clear: both;
+}
+.coment{
+    text-align: end;
+}
